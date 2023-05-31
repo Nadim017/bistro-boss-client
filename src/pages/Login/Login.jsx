@@ -7,6 +7,7 @@ import {
 import { AuthContext } from '../../providers/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import SocialLogin from '../shared/SocialLogin/SocialLogin';
 
 const Login = () => {
   const { signIn, user, loading } = useContext(AuthContext);
@@ -119,6 +120,7 @@ const Login = () => {
                 create an account
               </Link>
             </small>
+            <SocialLogin></SocialLogin>
           </p>
         </div>
       </div>
